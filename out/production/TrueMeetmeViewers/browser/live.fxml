@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane stylesheets="@css/live.css" id="login"
+          fx:controller="browser.Controller_live" xmlns:fx="http://javafx.com/fxml" alignment="center" gridLinesVisible="true">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="30.0"/>
+        <ColumnConstraints percentWidth="70.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="100.0"/>
+    </rowConstraints>
+
+    <GridPane id="leftSide" GridPane.columnIndex="0" gridLinesVisible="true">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="80.0"/>
+            <RowConstraints percentHeight="20.0"/>
+        </rowConstraints>
+
+        <VBox fx:id="profileInfo" GridPane.rowIndex="0" />
+        <FlowPane fx:id="menu" GridPane.rowIndex="1" />
+    </GridPane>
+
+    <GridPane id="rightSide" GridPane.columnIndex="1" gridLinesVisible="true">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="100.0"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="100.0"/>
+        </rowConstraints>
+
+        <FlowPane fx:id="livePane"/>
+
+    </GridPane>
+
+
+    </GridPane>

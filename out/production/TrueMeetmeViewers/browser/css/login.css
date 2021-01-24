@@ -1,0 +1,11 @@
+#login {
+    -fx-background-color:#ffffff;
+    -fx-font-family:"sans-serif";
+    -fx-font-size:16;
+}
+
+#failedLogin {
+    -fx-text-fill: #ff6347;
+    -fx-font-family:"sans-serif";
+    -fx-font-size:16;
+}
